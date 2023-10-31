@@ -8,8 +8,9 @@ import {
     STORAGE_BUCKET,
     MESSAGING_SENDER_ID,
     APP_ID,
-    MEASUREMENT_ID
-} from '@env'
+    MEASUREMENT_ID,
+} from "@env"
+
 
 const firebaseConfig = {
     apiKey: API_KEY,
@@ -21,10 +22,11 @@ const firebaseConfig = {
     measurementId: MEASUREMENT_ID
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 const auth = initializeAuth(app, {
     persistence: getReactNativePersistence(AsyncStorage)
 })
 
-export { auth }
+export { auth }; 
