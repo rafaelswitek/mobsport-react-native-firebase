@@ -1,11 +1,11 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, StatusBar } from "react-native";
 
 export default StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "flex-start",
     justifyContent: "flex-start",
-    paddingTop: 25,
+    paddingTop: StatusBar.currentHeight,
   },
   texto: {
     fontSize: 20,
